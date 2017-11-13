@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+	<title>Lamuño by Demetrio Lamuño</title>
+	<meta name="author" content="Demian Licht" />
+	<meta name="description" content="Paisajismo " />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/inner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/queries.css"/>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script type="text/javascript">
+    /* ---- particles.js config ---- */
+$(document).ready(function() {
+    
+            
+            $('.toggle').on('click', function() {
+	           menu.toggleClass('active');
+            });        
+    
+                var preload = $('#preloader');
+        
+            /*
+			* Preloader intialization
+			*/
+            
+            setTimeout(function(){ 
+                $('.overlay').fadeOut(300);
+            }, 1200);
+    
+            
+    
+            setTimeout(function(){ 
+                $('.intro-quote').removeClass('quote-text-active');
+            }, 1500);
+
+    
+            setTimeout(function(){ 
+                $('#particles-js').addClass('particles-js-active');
+                $('.logo-body').addClass('logo-body-active').css("background-color", '#fff');
+            }, 1000);
+    
+    
+            var logo_body = $('.logo-body');
+    
+                logo_body.click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index.html#inicio";
+                }
+                    });  
+            
+            $('.back-white').click(function() {
+              event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(1000, newpage);
+                function newpage() {
+                    window.location.href ="index.html#inicio";
+                }
+                    });        
+    
+                
+        
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 200,
+      "density": {
+        "enable": true,
+        "value_area":1200
+      }
+    },
+    "color": {
+      "value": "#fff"
+    },
+    
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#fff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.5,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 20,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#919191",
+      "opacity": 0.4,
+      "width": 1
+    },
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+          "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    
+});
+    
+    </script>
+
+</head>
+    <body>
+        
+        <div class="overlay"><div id="preloader"></div></div>
+        
+        <div id="particles-js"></div>
+
+        
+        <div class="back-white">Inicio</div>
+            
+        <div class="top-menu">
+            <div class="logo-body white">
+                <div class="logo-menu-icon"></div>
+            </div>
+        </div>
+
+       <div class="row container" style="max-width:1430px;">
+           <div class="col l2 m1">.</div>
+        <div class="col l8 m10 s12" style="max-width:900px;" id="inicio">
+            
+           <h1 class="intro-quote quote-text-active left" style="font-family: 'Aqua Grotesque'">LMÑ
+               <br><span>Lamuño por Demetrio Lamuño</span>
+           </h1>
+                        
+        <img src="imgs/inner/Vishen_2015.jpg" class="padding-left-40 img-inner margin-top-50 above">
+            
+        <p class="paragraph-text margin-top-30 left  ">
+            Interiorismo • Diseño • Manejo de Proyectos <br><br>
+            Más de 25 años de experiencia y excelencia.<br><br>  
+        </p> 
+                         
+        <p class="paragraph-text margin-top-30 left  ">
+           Empresa con más de 25 años de experiencia en construcción y remodelación comercial, empresarial, industrial y residencial. Administramos y ejecutamos cualquier tipo de proyecto. Nuestro personal altamente capacitado trabaja para brindar un servicio totalmente profesional; contamos con técnicos especializados en cada renglón de nuestro trabajo. Valoramos tanto al cliente como a nuestro personal.<br><br> 
+        </p> 
+            
+            <h1 class="txt-white quote-text">Nuestros Servicios</h1>
+            
+            <!-- Suministro e Instalacion -->
+            <h2 class="txt-white paragraph-head margin-30 left  ">Suministros, Instalación y Dirección</h2>
+                    <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descricion proyecto.</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+            Suministro e instalación de servicios y productos varios como: <br>
+            <ul class="paragraph-text margin-top-30 left">
+
+                <li>Diseño y Planificación</li>
+                <li>Creación de Diseños iniciales / Remodelación</li>
+                <li>Exterior o Interior , remodelaciones que transforman los ambientes y espacios en arte. </li>
+
+                <li>Asesoría y soluciones integrales / Obra civil </li>
+                <li>Plantas de tratamiento </li>
+                <li>Urbanizaciones</li>
+                <li>Construcción de casas , bodegas.</li>
+                <li>Carreteras</li>
+                <li>Movimiento de tierras</li>
+                <li>Topografía </li>
+            </ul>
+        </p> 
+           <!-- Interiorismo de elementos -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Interiorismo de elementos:</h2>
+                    <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descricion proyecto.</small></i>
+            </p>
+               <!-- Tabla yeso -->
+            <h2 class="txt-white paragraph-head margin-30 left  ">Tabla Yeso:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descricion proyecto.</small></i>
+            </p>
+        <p class="paragraph-text margin-top-30 left  "> 
+            Usando tecnología innovadora para la construcción de tabiques , reducimos tiempos y nos beneficiamos en costos , aplica a cualquier tipo de diseño , con lo cuál logramos acabados con estilo , concepto y alta calidad . 
+        </p> 
+           <!-- Carpinteria -->
+            <h2 class="txt-white paragraph-head margin-30 left  ">Carpinteria:</h2>
+            <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+           
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Diseñamos fabricamos y ofrecemos todos los servicios relacionados . Carpinteria de alto nivel en todo tipo de madera y aglomerado , enchapado y sólido ( muebles , cocinas , puertas , sillas , cabeceras  , closets , fachadas , forros , muros , estructuras , decks , pérgolas ) 
+        </p> 
+           <!-- Tapiz -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Papel tapiz:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Tapiz en telas nacionales o extranjeras , aplicaciones en cualquier elemento arquitectónico  (  muebles , muros , techos ) 
+        </p> 
+            <!-- Cuero -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Cuero:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Aplicación a cualquier elemento arquitectónico 
+        </p> 
+           <!-- Ventanas -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Ventanas:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Fabricación e instalación de ventanas  de aluminio y vidrio / PVC perfil Europeo 
+Pasamanos de vidrio templado y acero inoxidable 
+Fachadas de vidrio templado en tres sistemas , tradicional , Glass Fix , Spider . 
+        </p> 
+           
+         <!-- Herreria -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Herreria:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Servicio de herrería en general , industrial , semi-industrial , comercial y residencial .
+Todo tipo de acabado en hierro y metales . Diseño y ejecución de puertas , barandas , puertas , portones , cualquier estructura . 
+        </p> 
+           <!-- Pintura -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Pintura:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+          
+           Aplicación de pintura en sus diferentes niveles y marcas por personal calificado . 
+Electricidad  e iluminación 
+Todo tipo de trabajo eléctrico por profesionales autorizados , comercial , industrial y residencia. 
+        </p> 
+            <!-- Hidro-sanitario -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Trabajo hidro-sanitario:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Todo tipo de plomería.
+        </p> 
+           <!-- Obra gris -->
+           <h2 class="txt-white paragraph-head margin-30 left  ">Obra gris:</h2>
+           <img src="imgs/inner/Vishen_XPrize.jpg" class="padding-left-40 img-inner margin-top-50 above  ">
+            <p class="paragraph-text  smaller center  ">
+                <i><small>Descripcion del proyecto</small></i>
+            </p>
+
+            
+        <p class="paragraph-text margin-top-30 left  "> 
+           
+           Todo tipo de albañilería en sus diferentes formas y niveles.
+        </p> 
+            <h2 class="txt-white paragraph-head margin-30 left  ">Contacto:</h2>
+            
+        <p class="paragraph-text left  ">
+            Nuestro<a href="mailto:dlamuno@gmail.com.com" target="_blank"> correo</a> Nuestras redes: <a href="https://www.facebook.com/vishen" target="_blank">Facebook</a>. <br>
+            O llene este <a href="formulario">formulario</a>
+        </p>
+            
+            <h1 class="quote-text left  ">Trabajo <br>Destacado</h1>
+            
+            <h2 class="txt-white paragraph-head left  ">Proyecto destacado</h2>
+            
+        <p class="paragraph-text margin-top-30 float-left left  " data--offset="0">
+            <i>Descripcion del proyecto</i>
+            </p>
+                          
+            <a href="http://www.thecodexmind.com/" target="_blank">
+                <img src="imgs/Vishen_Book_1.png" width="250" class="padding-left-40 mob-book img-inner-small above  pulse animated-slow infinite">
+            </a>
+            
+          <p class="paragraph-text left  " data--offset="0">  
+            Descripcion del proyecto. 
+        </p> 
+            
+        <a href="http://www.thecodexmind.com/" target="_blank" class="inner-link margin-top-50  " data-wipe="Discover The Book">Ver mas proyectos en Facebook.</a>
+            
+            
+            
+           
+           <p class="paragraph-text txt-white margin-30 float-left left  ">.</p>
+
+           
+           </div>
+
+    </body>
+</html>
