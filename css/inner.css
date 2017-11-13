@@ -38,7 +38,7 @@ pre,textarea{overflow:auto}
 optgroup{font-weight:bold}
 /* End extract from normalize.css */
 html,body{font-family: 'Roboto', sans-serif;font-size:15px;line-height:1.5; font-weight: 100}
-h1,h2,h3,h4,h5,h6{font-weight: 100;font-family: 'Aqua Grotesque', sans-serif;margin:0;letter-spacing: 0px;}
+h1,h2,h3,h4,h5,h6{font-weight: 100;font-family: 'Aqua Grotesq';margin:0;letter-spacing: 0px;}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
@@ -124,7 +124,7 @@ a{color:inherit}
 
 
 @font-face {
-font-family: "Aqua Grotesque";
+font-family: 'Aqua Grotesq';
 src: url("/fonts/aqua.ttf");
 src: 
 url("/fonts/aqua-webfont.woff") format("woff"),
@@ -132,7 +132,7 @@ url("/fonts/aqua-webfont.woff2") format("woff2"),
 url("/fonts/aqua-webfont.ttf") format("ttf");
 }
 @font-face {
-font-family: "Polya";
+font-family: 'Polya';
 src: url("/fonts/polya.otf");
 src: 
 url("/fonts/polya-webfont.woff") format("woff"),
@@ -332,7 +332,7 @@ url("/fonts/polya-webfont.ttf") format("ttf");
 *-------------------------------------------------*/
 
 .back-white {
-    font-family: 'Aqua Grotesque';
+    font-family: 'Aqua Grotesq';
     font-weight: 800;
     font-size: 16px!important;
     text-transform: uppercase;
@@ -664,7 +664,7 @@ h3.quote-text{
 
 .paragraph-text {
         position: relative;
-        font-family: 'Polya';
+        font-family: 'Lato', sans-serif;
         font-weight: 300;
         color: #ABA9a9;
         left: 0;
@@ -679,7 +679,7 @@ h3.quote-text{
 
 .subheadline-text {
         position: relative;
-        font-family: 'Polya';
+        font-family: 'Lato', sans-serif;
         font-weight: 800;
         color: #fff;
         left: 0;
